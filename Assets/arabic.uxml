@@ -1,0 +1,5 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <ui:VisualElement style="flex-grow: 1; align-items: center; justify-content: center;">
+        <ui:Label tabindex="-1" text="اخوكم ادهم الشرقاوي&#10;رجل المستحيل" parse-escape-sequences="true" display-tooltip-when-elided="true" style="font-size: 50px; -unity-text-align: middle-center; -unity-font: url(&apos;project://database/Assets/alfont_com_Foda-Free-Font.ttf?fileID=12800000&amp;guid=71389fceb6de3c1488d9afe5ef708888&amp;type=3#alfont_com_Foda-Free-Font&apos;); -unity-font-definition: initial; letter-spacing: -1px;" />
+    </ui:VisualElement>
+</ui:UXML>

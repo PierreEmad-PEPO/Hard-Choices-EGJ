@@ -1,29 +1,19 @@
+using ArabicSupport;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UIElements;
 
 public class testtt2 : MonoBehaviour
 {
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        string txt = GetComponent<UIDocument>().rootVisualElement.Q<Label>().text;
+        var ar = ArabicFixer.Fix(txt);
+        GetComponent<UIDocument>().rootVisualElement.Q<Label>().text = ar;
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.M)) 
-        {
-            ResourcesManager.AddMoney(20);
-        }
-        if (Input.GetKeyDown(KeyCode.H))
-        {
-            ResourcesManager.AddHappiness(10);
-        }
-        if (Input.GetKeyDown(KeyCode.L))
-        {
-            ResourcesManager.AddPopulation(30);
-        }
-    }
+    
 }
